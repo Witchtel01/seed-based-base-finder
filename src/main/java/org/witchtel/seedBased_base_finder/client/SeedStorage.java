@@ -13,12 +13,12 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SeedConfig {
+public class SeedStorage {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final File CONFIG_FILE = new File(FabricLoader.getInstance().getConfigDir().toString(), "seed_based_base_finder_seedlist.json");
     private Map<String, String> serverSeeds = new HashMap<>();
 
-    public SeedConfig() {
+    public SeedStorage() {
         loadConfig();
     }
     public String getSeed(String serverAddress) {
