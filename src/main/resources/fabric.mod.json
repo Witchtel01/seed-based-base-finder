@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "seed-based_base_finder",
+  "version": "${version}",
+  "name": "Seed-Based Base Finder",
+  "description": "Finds changed blocks on a server given the seed",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/seed-based_base_finder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.witchtel.seedBased_base_finder.client.SeedBased_base_finderClient"
+    ],
+    "main": [
+      "org.witchtel.seedBased_base_finder.SeedBased_base_finder"
+    ]
+  },
+  "mixins": [
+    "seed-based_base_finder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
